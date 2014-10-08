@@ -51,7 +51,7 @@ module Fluent
 
     def write(chunk)
       chunk.msgpack_each do |data|
-        @exch.publish(data, :key => @key, :persistent => @persistent)
+        @exch.publish(data.to_json, :key => @key, :persistent => @persistent)
       end
     end
 

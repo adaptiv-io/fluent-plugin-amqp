@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
   s.summary = "AMQP input/output plugin or fluentd"
 
   s.add_runtime_dependency(%q<fluentd>, ["~> 0.10.0"])
-  s.add_runtime_dependency(%q<bunny>, ["~> 1.1.0"])
+  s.add_runtime_dependency(%q<bunny>, [">= 1.5.0.pre2"])
   s.add_development_dependency(%q<shoulda>)
   s.add_development_dependency(%q<rake>)
   s.add_development_dependency(%q<minitest>, ["< 5.0.0"])
